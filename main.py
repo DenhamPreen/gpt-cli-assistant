@@ -105,7 +105,7 @@ if __name__ == "__main__":
         answer = history[terminal_command_request]
     else:
         response = openai.Completion.create(
-            model="text-davinci-003",
+            model="gpt-3.5-turbo-instruct",
             prompt="Write a short bash script to "
                    + terminal_command_request
                    + "\n```bash\n#!/bin/bash",
